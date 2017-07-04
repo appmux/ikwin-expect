@@ -1,0 +1,33 @@
+{
+  "name": "ikwin-expect",
+  "version": "1.0.0",
+  "description": "IKWIN expect.",
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/ikwin-expect.js",
+  "scripts": {
+    "build": "npm run prepublish",
+    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir lib",
+    "test": "npm run build && mocha test/ikwin-expect.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appmux/ikwin-expect.git"
+  },
+  "keywords": [
+    "ikwin"
+  ],
+  "author": "Alexander Korzh (appmux)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appmux/ikwin-expect/issues"
+  },
+  "homepage": "https://github.com/appmux/ikwin-expect#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "mocha": "^3.4.2"
+  }
+}
